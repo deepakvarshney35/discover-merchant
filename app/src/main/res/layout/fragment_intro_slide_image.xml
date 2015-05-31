@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:weightSum="5"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/introImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:src="@drawable/intro1"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="You&apos;re going to do great things with discover! Swipe to see how."
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

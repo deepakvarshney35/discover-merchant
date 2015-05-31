@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E95665"
+    android:gravity="" >
+
+    <TextView
+        android:id="@+id/signInNowTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:text="Alread have an account? Sign in now"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+<Button 
+             android:id="@+id/signUpWithFBButton"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpWithEmailButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Sign up with Facebook"
+        android:background="@drawable/button_selector_main"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/signUpWithEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signInNowTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_selector_main"
+        android:text="Sign up with Email"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpWithFBButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/intro" />
+
+</RelativeLayout>

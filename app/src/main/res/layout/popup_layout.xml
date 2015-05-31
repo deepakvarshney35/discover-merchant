@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/discoverRed"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="Choose Marker Color"
+        android:textColor="#ffffff" 
+        android:textSize="18sp"/>
+
+<!-- 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15sp" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:background="#87D1ED" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:background="#F0F05B" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:onClick="oneRadioButtonClicked"
+                android:layout_weight="1"
+                android:background="#AF73F0" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:onClick="oneRadioButtonClicked"
+                android:layout_weight="1"
+                android:background="#C3EB73" />
+        </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="15sp" >
+
+            <RadioButton
+                android:id="@+id/RadioButton01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:layout_marginLeft="40sp"
+                android:background="#F2AADC" />
+
+            <RadioButton
+                android:id="@+id/RadioButton02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:onClick="oneRadioButtonClicked"
+                android:background="#F5B664" />
+
+            <RadioButton
+                android:id="@+id/RadioButton04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:onClick="oneRadioButtonClicked"
+                android:background="#AAF2E6" />
+
+            <RadioButton
+                android:id="@+id/RadioButton03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:onClick="oneRadioButtonClicked"
+                android:layout_weight="1"
+                android:background="#F27E84" />
+        </LinearLayout>
+ -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:background="#ffffff"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp" >
+
+        <Button
+            android:id="@+id/color2"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_toRightOf="@+id/color1"
+            android:background="@drawable/circular_color2" />
+
+        <Button
+            android:id="@+id/color3"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/color2"
+            android:background="@drawable/circular_color3" />
+
+        <Button
+            android:id="@+id/color1"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/circular_color1" />
+
+        <Button
+            android:id="@+id/color5"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_below="@+id/color2"
+            android:layout_toLeftOf="@+id/color2"
+            android:background="@drawable/circular_color5" />
+
+        <Button
+            android:id="@+id/color6"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_alignLeft="@+id/color2"
+            android:layout_below="@+id/color2"
+            android:background="@drawable/circular_color6" />
+
+        <Button
+            android:id="@+id/color7"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_alignLeft="@+id/color3"
+            android:layout_below="@+id/color3"
+            android:background="@drawable/circular_color7" />
+
+        <Button
+            android:id="@+id/color4"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_above="@+id/color8"
+            android:layout_marginLeft="10dp"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/color3"
+            android:background="@drawable/circular_color4" />
+
+        <Button
+            android:id="@+id/color8"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/color7"
+            android:onClick="oneRadioButtonClicked"
+            android:layout_alignBottom="@+id/color7"
+            android:layout_toRightOf="@+id/color7"
+            android:background="@drawable/circular_color8" />
+    </RelativeLayout>
+
+<!--     <Button
+        android:id="@+id/popupdone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffbf00"
+        android:text="Set this color" /> -->
+
+</LinearLayout>

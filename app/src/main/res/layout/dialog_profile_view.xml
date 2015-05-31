@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#ee555555">
+    <ImageView 
+        android:id="@+id/customerProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profilepic"/>
+
+
+<TextView
+    android:id="@+id/customeName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/customerProfilePicture"
+    android:layout_alignParentLeft="true"
+    android:paddingLeft="10dp"
+    android:padding="5dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:background="#88000000"
+    android:text="Customer Name" />
+</RelativeLayout>

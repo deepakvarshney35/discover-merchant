@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">pk Pizzas Pub.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_id">314599778703434</string>
+    <string name="add_item_activity">Items</string>
+    <string name="add_product_activity">Products</string>
+    
+    <string name="title_option_spinner">Select option:</string>
+    <string name="title_quantity_spinner">Select quantity:</string>
+    <string-array name="items_array">
+        <item>Offer</item>
+        <item>Brochure</item>
+        <item>Portfolio</item>
+        <item>Catalogue</item>
+        <item>Menu</item>
+        <item>Map</item>
+        <item>Products</item>
+        
+    </string-array>
+</resources>

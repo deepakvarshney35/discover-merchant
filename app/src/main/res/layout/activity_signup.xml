@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:padding="20dp"
+    tools:context=".SigninActivity" >
+    
+			<!-- Login form -->
+			
+    <RelativeLayout
+        android:id="@+id/login_form2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" >
+
+      <EditText
+          android:id="@+id/etEmail2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/etUser2"
+          android:layout_alignRight="@+id/etUser2"
+          android:layout_marginTop="10dp"
+          android:ems="10"
+          android:hint="Email"
+          android:inputType="textEmailAddress" />
+      
+          <EditText
+              android:id="@+id/etpass2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/etUser2"
+              android:layout_alignRight="@+id/etUser2"
+              android:layout_below="@+id/etUser2"
+              android:layout_marginTop="10dp"
+              android:hint="Password"
+              android:inputType="textPassword" />
+
+          <EditText
+              android:id="@+id/etUser2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/etEmail2"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+              android:ems="10"
+              android:hint="Username" />
+     
+    </RelativeLayout>
+    
+    <Button
+          android:id="@+id/btnSignup"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/login_form2"
+          android:layout_marginTop="50dp"
+          android:background="#FF5967"
+          android:textColor="#ffffff"
+          android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="By Signing up, you Agree to the" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Privacy Policy and Terms of Service "
+        android:textStyle="bold" />
+
+</RelativeLayout>

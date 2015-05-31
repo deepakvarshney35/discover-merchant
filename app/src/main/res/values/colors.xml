@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="deepSkyBlue">#00BFFF</color>
+    <color name="everNote">#0095dd</color>
+    <color name="actionBarTranslucent">#66000000</color>
+    <color name="darkGrey">#808084</color>
+    <color name="veryDarkGrey">#404042</color>
+    <color name="GreyGrey">#CCCCCC</color>
+    <color name="veryLightGrey">#efefef</color>
+    <color name="lightGrey">#cccccc</color>
+    <color name="HoloGrey">#384261</color>
+    <color name="titleselected">#798DC3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="translucentBlack">#8C000000</color>
+    <color name="translucentBlack5Percent">#0D000000</color>
+    <color name="whiteTranslucent10Percent">#1Affffff</color>
+    <color name="whiteTranslucent20Percent">#33ffffff</color>
+    <color name="whiteTranslucent50Percent">#80ffffff</color>
+    <color name="whiteTranslucent90Percent">#E6ffffff</color>
+    <color name="whiteTranslucent70Percent">#B3ffffff</color>
+    <color name="blackTranslucent40Percent">#66000000</color>
+    <color name="blackTranslucent50Percent">#80000000</color>
+    <color name="blackTranslucent10Percent">#1A000000</color>
+    <color name="blueButton">#288ee8</color>
+    <color name="blueButtonFocussed">#3fc6ff</color>
+    <color name="holoLightBackground">#e5e5e5</color>
+    <color name="discoverRed">#3F5CA9</color>
+    <color name="discoverRedold">#3F5CA9</color>
+    <color name="discoverRedOld">#F85750</color>
+    <color name="discoverRedDark">#2E4B98</color>
+    <color name="discoverRedDarkOld">#AD3C38</color>
+    <color name="holoLightBackground2">#f3f3f3</color>
+    <color name="twitterBlue">#4099FF</color>
+    <color name="twitterBlueSelected">#337acc</color>
+    <color name="googlePlusRed">#d34836</color>
+    <color name="holoLightBackgroundTranslucent70Percent">#B3f3f3f3</color>
+    <color name="holoLightSecondaryText">#808080</color>
+    <color name="paletteColor0">#87D1ED</color>
+    <color name="paletteColor1">#F0F05B</color>
+    <color name="paletteColor2">#AF73F0</color>
+    <color name="paletteColor3">#C3EB73</color>
+    <color name="paletteColor4">#F2AADC</color>
+    <color name="paletteColor5">#F5B664</color>
+    <color name="edittextStrokeGrey">#c1c1c1</color>
+    <color name="paletteColor6">#68FCD2</color>
+    <color name="paletteColor7">#F27E84</color>
+    <color name="welcomered">#E95665</color>
+    <color name="googlePlusRedSelected">#c03d28</color>
+    <!-- Fancy Colorscheme -->
+    <color name="greyCardLayoutBackground">#DADBDB</color>
+    <color name="primaryTextColorLight">#585D66</color>
+    <color name="primaryTextColorDark">#343943</color>
+    <color name="secondaryTextColor">#7E8185</color>
+    <color name="secondayTextColor2">#737780</color>
+    <color name="secondayTextColorLight">#B1B4B7</color>
+    <color name="editTextUnfocussed">#E3E4E6</color>
+    <color name="editTextUnFocussed2">#E5E5E5</color>
+    <color name="dividerColor">#E5E5E5</color>
+    <color name="indigo500">#3F5CA9</color>
+    <!-- SlidingTabStrip stuff -->
+    <color name="sts_divider_color">#90cccccc</color>
+    <color name="sts_indicator_color">@color/indigo500</color>
+    <color name="sts_background_tab_pressed">#6633B5E5</color>
+    <color name="sts_tab_text_color">#808080</color>
+    <color name="sts_tab_text_color_selected">#000000</color>
+
+    <!-- Facebook Colorscheme -->
+    <color name="fb_greyCardLayoutBackground">#DADBDB</color>
+    <color name="fb_secondaryTextColor">#7E8185</color>
+    <color name="fb_secondayTextColor2">#737780</color>
+    <color name="fb_secondayTextColorLight">#B1B4B7</color>
+    <color name="fb_editTextUnfocussed">#E3E4E6</color>
+    <color name="fb_editTextUnFocussed2">#E5E5E5</color>
+    <color name="fb_dividerColor">#E5E5E5</color>
+    <color name="fb_cardTitleBackground">#F6F7F8</color>
+    <color name="fb_cardTitleText">#6A7180</color>
+    <color name="textPrimary">#DD000000</color>
+    <color name="textSecondary">#89000000</color>
+
+</resources>

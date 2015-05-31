@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_call"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_call_white_24dp"
+        android:title="Call">
+    </item>
+    <item android:id="@+id/action_mail"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_mail_white_24dp"
+        android:title="Mail">
+    </item>
+    <item android:id="@+id/action_delete"
+        android:showAsAction="never"
+        android:title="Delete">
+    </item>
+    <item android:id="@+id/action_shared_offers"
+        android:showAsAction="never"
+        android:title="Shared Offers">
+    </item>
+    <item android:id="@+id/action_shopping_cart"
+        android:showAsAction="never"
+        android:title="Shopping Cart">
+    </item>
+
+</menu>

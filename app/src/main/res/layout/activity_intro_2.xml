@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333" >
+
+        <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/default_padding"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/getStartedButton"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/pager_indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/indicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/pager_indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/indicator3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/pager_indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/indicator4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/pager_indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/indicator5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/pager_indicator_unselected" />
+
+            <!-- <ImageView
+                android:id="@+id/indicator6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/pager_indicator_unselected" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_above="@+id/signInNowTextView"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout22">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/google_plus_logo_background"
+                        android:src="@drawable/google_plus_logo"
+                        android:scaleType="centerInside"
+                        android:id="@+id/imageView"
+                        android:layout_alignBottom="@+id/signInWithGooglePlusButton" />
+
+                    <Button
+                        android:id="@+id/signInWithGooglePlusButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_selector_google_plus"
+                        android:text="Connect via Google+"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_toEndOf="@+id/imageView" />
+
+                    </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/com_facebook_blue"
+                        android:src="@drawable/com_facebook_logo"
+                        android:scaleType="centerInside"
+                        android:id="@+id/imageView2"
+                        android:layout_alignBottom="@+id/signInWithFacebookButton" />
+
+                    <Button
+                        android:id="@+id/signInWithFacebookButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:gravity="left|center"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_selector_twitter"
+                        android:text="Connect via Facebook"
+                        android:layout_toEndOf="@+id/imageView2" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.8dp"
+                    android:background="@color/whiteTranslucent90Percent"
+                    android:layout_toStartOf="@+id/textView"
+                    android:id="@+id/view"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Or use your email address"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textView" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.8dp"
+                    android:background="@color/whiteTranslucent90Percent"
+                    android:layout_toEndOf="@+id/textView"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/signUpWithEmailButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_selector_intro_2"
+                    android:text="Sign up"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/signInWithEmailButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector_intro_2"
+                    android:text="Sign in"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

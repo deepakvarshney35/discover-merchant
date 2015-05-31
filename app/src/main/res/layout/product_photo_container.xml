@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+                <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/uploadedPhotoPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/uploadedPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/apparels" />
+                    <ImageView
+                        android:id="@+id/uploadedPhotoDelete"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:background="@drawable/button_selector_translucent"
+                        android:src="@drawable/ic_action_cancel" />
+
+                    <TextView
+                        android:id="@+id/uploadedPhotoName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/imageView1"
+                        android:layout_toLeftOf="@+id/uploadedPhotoDelete"
+                        android:background="@color/blackTranslucent40Percent"
+                        android:paddingLeft="5dp"
+                        android:text="Photo"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>

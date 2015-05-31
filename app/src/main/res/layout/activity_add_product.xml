@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/actionBarProduct"
+            android:background="@color/holoLightBackground" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/holoLightBackground" >
+
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/holoLightBackground" >
+
+                    <LinearLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e0e0e0"
+                            android:padding="10dp"
+                            android:text="Product Details"
+                            android:textColor="@color/fb_cardTitleText"
+                            android:textSize="20sp" >
+                        </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/lightGrey" />
+
+                        <ImageButton
+                            android:id="@+id/colorselect"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/transp_button"
+                            android:padding="3dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/chooser"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="visible" >
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productTypeText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product Type"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product Type"
+                                    android:inputType="textCapSentences"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" >
+
+                                    <requestFocus />
+                                </EditText>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productNameText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product name"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product name"
+                                    android:inputType="textCapSentences"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp"
+                                    android:singleLine="true" >
+                                </EditText>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productdescText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product Description"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productdesc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product Description"
+                                    android:inputType="textCapSentences"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productcostText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product Cost"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productcost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product Cost"
+                                    android:inputType="number"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp"
+                                    android:singleLine="true" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productShippingCostText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product Shipping Cost"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productShippingCost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product Shipping Cost"
+                                    android:inputType="number"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp"
+                                    android:singleLine="true" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productTaxText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product Tax"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productTax"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product Tax"
+                                    android:inputType="number"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp"
+                                    android:singleLine="true" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="15dp" >
+
+                                <TextView
+                                    android:id="@+id/productStockText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:paddingLeft="10dp"
+                                    android:text="Product Stock"
+                                    android:textColor="@color/discoverRed"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/productStock"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Product Stock"
+                                    android:inputType="number"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="20dp"
+                                    android:singleLine="true" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGrey" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#e0e0e0"
+                                android:padding="10dp"
+                                android:text="Options"
+                                android:textColor="@color/fb_cardTitleText"
+                                android:textSize="20sp" >
+                            </TextView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/lightGrey" />
+
+                            <FrameLayout
+                                android:id="@+id/optionFrame1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/optionText1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:hint="Product Option 1"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/optionCost1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1.5"
+                                        android:gravity="left"
+                                        android:hint="Option Cost 1"
+                                        android:inputType="number"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/optionCancel1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/plus"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/optionFrame2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/optionText2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:hint="Product Option 2"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/optionCost2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1.5"
+                                        android:gravity="left"
+                                        android:hint="Option Cost 2"
+                                        android:inputType="number"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/optionCancel2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/plus"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/optionFrame3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/optionText3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:hint="Product Option 3"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/optionCost3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1.5"
+                                        android:gravity="left"
+                                        android:hint="Option Cost 3"
+                                        android:inputType="number"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/optionCancel3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/plus"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/optionFrame4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/optionText4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:hint="Product Option 4"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/optionCost4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1.5"
+                                        android:gravity="left"
+                                        android:hint="Option Cost 4"
+                                        android:inputType="number"
+                                        android:paddingBottom="15dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="15dp"
+                                        android:singleLine="true"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/optionCancel4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/plus"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <Button
+                                android:id="@+id/optionButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="left"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="15dp"
+                                android:text="Add Options"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGrey" />
+
+                        <TextView
+                            android:id="@+id/uploadExtraPhotos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e0e0e0"
+                            android:padding="10dp"
+                            android:text="Product Photos"
+                            android:textColor="@color/fb_cardTitleText"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/lightGrey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/uploadedPhotoMainLayout"
+                                android:layout_width="220dp"
+                                android:layout_height="220dp"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:visibility="visible" >
+
+                                <ImageView
+                                    android:id="@+id/uploadedPhotoMain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/upload" />
+
+                                <ImageView
+                                    android:id="@+id/uploadedPhotoMainDelete"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/button_selector_translucent"
+                                    android:clickable="true"
+                                    android:src="@drawable/ic_action_cancel"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/uploadedPhotoMainName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignTop="@+id/imageView1"
+                                    android:layout_toLeftOf="@+id/uploadedPhotoDelete"
+                                    android:background="@color/blackTranslucent50Percent"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Click to Upload"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+                            </RelativeLayout>
+
+                            <GridLayout
+                                android:id="@+id/photosContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnCount="2"
+                                android:padding="5dp" >
+                            </GridLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/actionBarProduct"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/discardProduct"
+                style="?android:actionButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/button_selector_main" >
+
+                <TextView
+                    style="?android:actionBarTabTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_action_cancel"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/discoverRed" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:background="@color/whiteTranslucent50Percent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/discoverRed" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/saveProduct"
+                style="?android:actionButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/button_selector_main" >
+
+                <TextView
+                    style="?android:actionBarTabTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_action_accept"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAboveAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/holoLightBackground"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/circle_button_selector_red"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_action_attachment"
+        android:visibility="visible" />
+
+</FrameLayout>
